@@ -1,0 +1,78 @@
+//<BUTTONS (a.btn+tab)>
+// Сніппет (HTML): btn
+
+.button {
+  display: inline-flex;
+  padding: toRem(5) toRem(40) toRem(11) toRem(40);
+  border-radius: toRem(1000);
+  background-color: $bgDarkColor;
+  color: $seaGreenColor;
+  line-height: 150%; /* 24/16 */
+
+  @media (any-hover: hover) {
+    &:hover {
+    }
+  }
+  &--buying {
+    display: inline-block;
+    color: $whiteColor;
+    width: toRem(44);
+    height: toRem(26);
+    transition: all 0.3s;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #5d6467;
+      }
+    }
+    padding: toRem(3) toRem(17) toRem(7) toRem(17);
+    line-height: 100%; /* 16/16 */
+  }
+  &--light {
+    background-color: $bgLightColor;
+    padding: toRem(4) toRem(10) toRem(6) toRem(10);
+    font-size: toRem(12);
+    line-height: 130%; /* 15.6/12 */
+    color: $bgDarkColor;
+    transition: all 0.3s;
+    margin-bottom: toRem(5);
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #f7e7d1;
+      }
+    }
+  }
+  &--brown {
+    background-color: $brownColor;
+    color: $lightGreen;
+    transition: all 0.3s;
+    padding: toRem(8) toRem(40) toRem(8) toRem(40);
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #97713c;
+      }
+    }
+  }
+
+  &--green {
+    background-color: $seaGreenColor;
+    color: $bgDarkColor;
+    transition: all 0.3s;
+    padding: toRem(8) toRem(40) toRem(8) toRem(40);
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #bde6a1;
+      }
+    }
+  }
+  &--smallGreen {
+    background-color: $seaGreenColor;
+    color: $bgDarkColor;
+    padding: toRem(14) toRem(40) toRem(16) toRem(40);
+  }
+}
+.button-span {
+  display: inline-block;
+  font-size: toRem(16);
+  padding-top: toRem(6);
+  padding-left: toRem(5);
+}
