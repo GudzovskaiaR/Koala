@@ -158,10 +158,13 @@
   // .menu__link
 
   &__link {
+   
     display: inline-block;
     line-height: 125%;
     text-transform: capitalize;
     transition: all 0.3;
+    font-size:toRem(18) ;
+    font-weight: 500;
     @media (any-hover: hover) {
       &:hover {
         text-decoration: underline;
